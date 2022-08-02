@@ -1,0 +1,39 @@
+<!-- carrega as bibliotecas bo django-bootstrap instalado-->
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- bloco titulo-->
+    <title>
+        {% block title %}
+        {% endblock %}
+
+        <style>
+            .bg-AzulEscuro{
+                background-color: #046;
+            }
+            .bg-cinzaClaro{
+                background-color: #ddd;
+            }
+
+        </style>
+    </title>
+    <!--- fim bloco titulo-->
+
+    <!-- carrega o css do django-bootstrap4-->
+    {% bootstrap_css %}
+</head>
+<body>
+
+
+    <!-- blco body-->
+    {% block body %}
+    {% endblock %}
+
+<!--carrega o js do bootstrap4-->
+{% bootstrap_javascript jquery='full' %}
+</body>
+</html>
