@@ -7,6 +7,9 @@
 .custom-header{
 
     background-image: url("/static/imagens/nav_one_piece.png");
+    width: 100%;
+    height: auto;
+
 
 
 }
