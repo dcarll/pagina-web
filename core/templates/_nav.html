@@ -1,19 +1,43 @@
 {% load static %}
-
-<nav class="navbar navbar-expand-sm navbar-dark bg-AzulEscuro">
-    <div class="container-fluid">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+<div class="pos-f-t">
+   <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+         <h4 class="text-white">Collapsed content</h4>
+         <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+   </div>
+   <div class="navbar navbar-expand-lg bg-AzulEscuro row">
+      <div class="col-lg-3">
+         <a class="navbar-brand" href="#">O POÇO</a>
+         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Imagens</a>
+               <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Sobre</a>
+               <a class="nav-link" href="#">Pricing</a>
             </li>
-
-        </ul>
-    </div>
-
-</nav>
+         </ul>
+      </div>
+      <div class="col-lg-3">
+        <form class="mt-2">
+            <div class="input-group mb-2">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn btn-success" type="button" id="button-addon2">Buscar</button>
+          </div>
+        </div>
+            
+        </form>
+        
+      </div>
+   </div>
+   </nav>
+</div>

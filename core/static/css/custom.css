@@ -4,12 +4,28 @@
 .bg-cinzaClaro{
     background-color: #ddd;
 }
-.custom-header{
+header img{
+	width: 100%;
+	padding-right: 0;
+	
+}
+.header-container {
+  position: relative; 
+}
 
-    background-image: url("/static/imagens/nav_one_piece.png");
-    width: 100%;
-    height: auto;
+#header-img{
+  position: relative;
 
+}
 
+header h1{
+  position: absolute;
+  font-size: 32px;
+  left: 250px;
+  top: 135px;
+  
+}
 
+header nav button{
+	color: white;
 }
